@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Electronics Dissection Journey</title>
     <link rel="stylesheet" href="./index_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -37,33 +37,24 @@
     <section class="product-section">
         <h2>Minecraft Diamond Ore Light</h2>
         <div class="product-images">
-            <img src="images/IsometricView.JPG" alt="Minecraft Diamond Ore Light Isometric View">
-            <img src="images/TopDownView.JPG" alt="Minecraft Diamond Ore Light Top Down View">
-            <img src="images/FrontIlluminated.jpg" alt="Minecraft Diamond Ore Light Front Illuminated View">
+            <img src="images/IsometricView.JPG" alt="Minecraft Diamond Ore Light Isometric View" onclick="showDetails('bottomCube')">
+            <img src="images/TopDownView.JPG" alt="Minecraft Diamond Ore Light Top Down View" onclick="showDetails('bottomBatteries')">
+            <img src="images/FrontIlluminated.jpg" alt="Minecraft Diamond Ore Light Front Illuminated View" onclick="showDetails('bottomScrews')">
         </div>
         <div class="product-details">
             <div class="product-box">
                 <h3>Overview</h3>
-                <p>
-                    This cube-shaped LED lamp replicates the look of the diamond ore block from Minecraft. Designed for both utility and aesthetic appeal, it's a favorite among fans and collectors.
-                </p>
+                <p>This cube-shaped LED lamp replicates the look of the diamond ore block from Minecraft. Designed for both utility and aesthetic appeal, it's a favorite among fans and collectors.</p>
             </div>
-            <div class="product-box">
-                <h3>Key Features</h3>
-                <ul>
-                    <li>Model: WF150615-51581</li>
-                    <li>Dimensions: 5 x 5 x 5 inches</li>
-                    <li>Power: USB or 3 AAA batteries</li>
-                    <li>Lighting: Touch-activated, three brightness levels</li>
-                    <li>Material: Durable ABS plastic</li>
-                </ul>
-            </div>
-            <div class="product-box">
-                <h3>Market Information</h3>
-                <p>
-                    The product is officially licensed by Mojang and is available online through major retailers like Amazon. Its accessible price and unique design make it a hit among Minecraft enthusiasts.
-                </p>
-            </div>
+        </div>
+    </section>
+
+    <section id="details-popup" class="hidden">
+        <div class="popup-content">
+            <h3 id="details-title"></h3>
+            <p id="details-description"></p>
+            <img id="details-image" src="" alt="Detailed view">
+            <button onclick="closeDetails()">Close</button>
         </div>
     </section>
 
@@ -77,6 +68,7 @@
         </div>
     </section>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
