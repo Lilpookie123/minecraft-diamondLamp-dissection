@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-    background: #0D1117;
+    background: url('images/Minecraft.webp') repeat center center fixed;
+    background-size: cover;
     color: #C5D9F1;
     line-height: 1.8;
     padding-bottom: 2rem;
