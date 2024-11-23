@@ -2,12 +2,7 @@
 body {
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-    background-image: url("images/blur.jpg"), url("images/Minecraft.webp"), url("images/noise.jpg");
-    background-size: cover;
-    background-blend-mode: overlay, normal, multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #0D1117;
+    background: #0D1117;
     color: #C5D9F1;
     line-height: 1.8;
     padding-bottom: 2rem;
@@ -130,42 +125,63 @@ body {
 .product-images img:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+    cursor: pointer;
 }
 
-/* Product Details */
-.product-details {
+/* Details Popup */
+#details-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#details-popup.visible {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 }
 
-.product-box {
-    margin: 1.5rem 0;
+.popup-content {
     background: #0D1B27;
-    padding: 1rem;
-    border-radius: 12px;
-    border: 2px solid #FF5733;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-}
-
-.product-box h3 {
-    color: #FFC300;
-    margin-bottom: 0.5rem;
-}
-
-.product-box p,
-.product-box ul {
+    border-radius: 15px;
+    padding: 2rem;
     color: #C5D9F1;
+    border: 2px solid #FF5733;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    width: 600px;
+    max-width: 90%;
+}
+
+.popup-content h3 {
+    color: #FFC300;
+}
+
+.popup-content img {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 2px solid #FF5733;
+}
+
+.popup-content button {
+    background: linear-gradient(to bottom, #FF4500, #FF6347);
+    color: #FFFFFF;
     font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.product-box ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-}
-
-.product-box ul li {
-    margin-bottom: 0.5rem;
+.popup-content button:hover {
+    background: linear-gradient(to bottom, #FFC300, #FF5733);
 }
 
 /* Footer Section */
@@ -200,6 +216,7 @@ body {
     border-radius: 8px;
     background: linear-gradient(to bottom, #FF4500, #FF6347);
     border: 2px solid #900C3F;
+    cursor: pointer;
     text-decoration: none;
     box-shadow: inset 0 2px #FFC300, 0 5px #900C3F;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -208,4 +225,58 @@ body {
 .button:hover {
     background: linear-gradient(to bottom, #FFC300, #FF5733);
     transform: translateY(-2px);
+}
+
+/* Mobile Styles for Screens Up to 768px */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .intro-section, .product-section, .footer {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .product-images {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .product-images img {
+        max-width: 100%;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
 }
