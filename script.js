@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeButton = document.querySelector('.close-button');
     if (closeButton) {
         closeButton.addEventListener('click', closeDetails);
-    }
+    }a
 
     // Attach event listener for clicking outside the popup content to close it
     document.addEventListener('click', function (event) {

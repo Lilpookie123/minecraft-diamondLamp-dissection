@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Body Styling */
 body {
     margin: 0;
@@ -140,3 +141,114 @@ body {
         line-height: 1.4; /* Improve readability on small screens */
     }
 }
+=======
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("images/blur.jpg"), url("images/Minecraft.webp"), url("images/noise.jpg");
+    background-size: cover;
+    background-blend-mode: overlay, normal, multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0D1117;
+    color: #C5D9F1;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    background: #0D1B27;
+    padding: 0.8rem 0.5rem;
+    border-bottom: 4px solid #900C3F;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.nav-item {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #FF5733, #C70039);
+    border: 2px solid #900C3F;
+    box-shadow: inset 0 2px #FFC300, 0 5px #900C3F;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative;
+}
+
+.nav-item:hover {
+    background: linear-gradient(to bottom, #FFC300, #FF5733);
+    box-shadow: inset 0 2px #FFD700, 0 6px #900C3F;
+    transform: translateY(-2px);
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #0D1B27;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    border: 3px solid #1E6F9F;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.85);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: #FFC300;
+    text-shadow: 0 0 8px #FF5733, 0 0 15px #C70039;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #E6E6E6;
+}
+
+/* Content Section Styling */
+.market-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #0D1B27;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 2px solid #FF5733;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.content-section h2 {
+    color: #FFC300;
+    text-align: left;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #FF5733;
+    margin-bottom: 0.5rem;
+}
+
+.content-section p {
+    color: #C5D9F1;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Styling */
+.footer {
+    background: #0D1B27;
+    border-top: 4px solid #900C3F;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+>>>>>>> 29029dad7447e3dbd8dcbc045175628cfb06f117
