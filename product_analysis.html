@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Operation</title>
+        <link rel="stylesheet" href="./shared_theme.css">
+        <link rel="stylesheet" href="./product_operation_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="dissection_journal.html" class="nav-item active">Dissection Journal</a>
+            <a href="market_retail_info.html" class="nav-item">Market & Retail Info</a>
+            <a href="product_operation.html" class="nav-item coming-soon">Product Operation</a>
+            <a href="product_analysis.html" class="nav-item coming-soon">Product Analysis</a>
+        </nav>
+
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Product Analysis</h1>
+            <p>An in-depth analysis of the Minecraft Diamond Lamp (WF150615-51581), exploring components, power, and design.</p>
+        </header>
+
+        <!-- High-Level Design Diagram Section -->
+        <section class="market-content">
+            <div class="content-section">
+                <h2>High-Level Design Diagram</h2>
+                <p>This diagram outlines the key components of the Minecraft Diamond Lamp and their interactions.</p>
+                <div class="diagram-container">
+                    <div class="photo-card">
+                        <img src="images/MCUFlowchart.png" alt="High-Level Design Diagram" class="diagram-image">
+                        <a href="#" class="button" onclick="showDetails('MCU Flowchart', 'images/MCUFlowchart.png', 'This flowchart shows the high-level design of the Minecraft Diamond Lamp\'s microcontroller, including the primary functions and their interactions.')">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Circuit Diagram Section -->
+            <div class="content-section">
+                <h2>Circuit Diagram</h2>
+                <p>The internal circuitry of the Minecraft Diamond Lamp, detailing component layout and electrical connections.</p>
+                <div class="diagram-container">
+                    <div class="photo-card">
+                        <img src="images/CircuitDiagram.png" alt="Circuit Diagram" class="diagram-image">
+                        <a href="#" class="button" onclick="showDetails('Circuit Diagram', 'images/CircuitDiagram.png', 'This circuit diagram provides an overview of the electrical connections and components inside the Minecraft Diamond Lamp.')">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Power Usage Section -->
+            <div class="content-section">
+                <h2>Power Usage</h2>
+                <p>During the analysis, power consumption was evaluated based on operational states:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>% Time</th>
+                            <th>Current (µA)</th>
+                            <th>Average Current (µA)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calculation Time (0.175s)</td>
+                            <td>10</td>
+                            <td>1.75</td>
+                        </tr>
+                        <tr>
+                            <td>Idle Time (0.825s)</td>
+                            <td>5</td>
+                            <td>4.125</td>
+                        </tr>
+                        <tr>
+                            <td>Average Current</td>
+                            <td colspan="2">5.875</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>With an AG13 cell battery rated for 150mAh, the estimated battery life is approximately 3 years based on average consumption.</p>
+            </div>
+
+            <!-- Bill of Materials (BoM) Section -->
+            <div class="content-section bom-table">
+                <h2>Bill of Materials (BoM)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Value</th>
+                            <th>Qty</th>
+                            <th>Unit Cost ($)</th>
+                            <th>Total Cost ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R1</td>
+                            <td>475K</td>
+                            <td>1</td>
+                            <td>0.0675</td>
+                            <td>0.0675</td>
+                        </tr>
+                        <tr>
+                            <td>R2</td>
+                            <td>38.3</td>
+                            <td>1</td>
+                            <td>0.0070</td>
+                            <td>0.0070</td>
+                        </tr>
+                        <tr>
+                            <td>RT</td>
+                            <td>Thermistor</td>
+                            <td>1</td>
+                            <td>0.3000</td>
+                            <td>0.3000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Non-Electrical Materials</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Qty</th>
+                            <th>Unit Cost ($)</th>
+                            <th>Total Cost ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PCB</td>
+                            <td>1</td>
+                            <td>0.45</td>
+                            <td>0.45</td>
+                        </tr>
+                        <tr>
+                            <td>Plastic Casing</td>
+                            <td>1</td>
+                            <td>0.14</td>
+                            <td>0.14</td>
+                        </tr>
+                        <tr>
+                            <td>Screws</td>
+                            <td>4</td>
+                            <td>0.04</td>
+                            <td>0.16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Internal Photos Section -->
+        <section class="market-content">
+            <div class="content-section">
+                <h2>Internal Photos</h2>
+                <p>Explore the internal structure of the Minecraft Cube with the following images:</p>
+                <div class="internal-photos">
+                    <div class="photo-card">
+                        <img src="images/BottomCube.jpg" alt="Bottom Cube View">
+                        <p>Bottom Cube View</p>
+                        <a href="#" class="button" onclick="showDetails('Bottom Cube View', 'images/BottomCube.jpg', 'This is the bottom view of the cube, showing its general layout and labels. Here you can see the screws and battery compartment cover.')">View Details</a>
+                    </div>
+                    <div class="photo-card">
+                        <img src="images/InternalsBackView.jpg" alt="Internals Back View">
+                        <p>Internals Back View</p>
+                        <a href="#" class="button" onclick="showDetails('Internals Back View', 'images/InternalsBackView.jpg', 'This image reveals the internal circuit of the cube, with wires and the primary control board. You can see how the connections are made inside.')">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pop-Up Section -->
+        <div id="details-popup" class="details-popup hidden">
+            <div class="details-content">
+                <span class="close-button" onclick="closeDetails()">&times;</span>
+                <div id="details-text" class="details-text">
+                    <h2 id="details-title" class="details-title">Title Here</h2>
+                    <img id="details-image" class="details-image" src="" alt="Detail Image">
+                    <p id="details-description" class="details-description">Description goes here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function showDetails(title, imageSrc, description) {
+                document.getElementById("details-title").textContent = title;
+                document.getElementById("details-image").src = imageSrc;
+                document.getElementById("details-description").textContent = description;
+                document.getElementById("details-popup").classList.remove("hidden");
+            }
+
+            function closeDetails() {
+                document.getElementById("details-popup").classList.add("hidden");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Operation</title>
+    <link rel="stylesheet" href="./shared_theme.css">
+    <link rel="stylesheet" href="./product_operation_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="dissection_journal.html" class="nav-item active">Dissection Journal</a>
+        <a href="market_retail_info.html" class="nav-item">Market & Retail Info</a>
+        <a href="product_operation.html" class="nav-item">Product Operation</a>
+        <a href="product_analysis.html" class="nav-item">Product Analysis</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Product Operation</h1>
+        <p>Explore the operation, timing diagrams, and internals of the Minecraft Diamond Cube (WF150615-51581).</p>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="market-content">
+        <div class="content-section">
+            <h2>Overview</h2>
+            <p>The Minecraft Diamond Cube (Product ID: WF150615-51581) is an LED-based decorative cube inspired by the in-game diamond ore block. This product features:</p>
+            <ul>
+                <li>4 LED lights installed on the internal panel for dynamic glowing effects.</li>
+                <li>A central microcontroller that powers and synchronizes the LED patterns.</li>
+                <li>Dedicated battery pack support for standalone operation.</li>
+                <li>External power input for continuous operation.</li>
+            </ul>
+            <p>The cube’s internal structure reveals a well-designed PCB with connectors for LEDs, power management, and soldered components for durability.</p>
+        </div>
+    </section>
+
+    <!-- Timing Diagrams Section -->
+    <section class="market-content">
+        <div class="content-section">
+            <h2>Timing Diagrams</h2>
+            <p>Below are detailed timing diagrams for the LED operation and power management of the Minecraft Cube:</p>
+            <div class="timing-diagrams">
+                <div class="timing-card">
+                    <img src="images/Battery_ON.png" alt="Battery ON Timing Diagram">
+                    <p>Battery ON Timing</p>
+                    <a href="#" class="button" data-image-id="batteryOnTiming">View Details</a>
+                </div>
+                <div class="timing-card">
+                    <img src="images/Accelerometer_waveformLow.png" alt="Accelerometer Low Timing Diagram">
+                    <p>Low Brightness Mode</p>
+                    <a href="#" class="button" data-image-id="lowBrightness">View Details</a>
+                </div>
+                <div class="timing-card">
+                    <img src="images/Accelerometer_WaveformMedium.png" alt="Accelerometer Medium Timing Diagram">
+                    <p>Medium Brightness Mode</p>
+                    <a href="#" class="button" data-image-id="mediumBrightness">View Details</a>
+                </div>
+                <div class="timing-card">
+                    <img src="images/Acceleromet_waveformHigh.png" alt="Accelerometer High Timing Diagram">
+                    <p>High Brightness Mode</p>
+                    <a href="#" class="button" data-image-id="highBrightness">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internal Photos Section -->
+    <section class="market-content">
+        <div class="content-section">
+            <h2>Internal Photos</h2>
+            <p>Explore the internal structure of the Minecraft Cube with the following images:</p>
+            <div class="internal-photos">
+                <div class="photo-card">
+                    <img src="images/Ball_tilt_switch_Annotated.jpg" alt="Ball Tilt Switch Image">
+                    <p>Ball Tilt Switch</p>
+                    <a href="#" class="button" data-image-id="ballTiltSwitch">View Details</a>
+                </div>
+                <div class="photo-card">
+                    <img src="images/CircuitBoard_Annotated.jpg" alt="Circuit Board Image">
+                    <p>Circuit Board</p>
+                    <a href="#" class="button" data-image-id="circuitBoard">View Details</a>
+                </div>
+                <div class="photo-card">
+                    <img src="images/Lights_ON.jpg" alt="LED Lights ON Image">
+                    <p>LED Lights ON</p>
+                    <a href="#" class="button" data-image-id="ledLightsOn">View Details</a>
+                </div>
+                <div class="photo-card">
+                    <img src="images/On_Off_Button_Annotated.jpg" alt="On-Off Switch Image">
+                    <p>On-Off Switch</p>
+                    <a href="#" class="button" data-image-id="onOffSwitch">View Details</a>
+                </div>
+                <div class="photo-card">
+                    <img src="images/OscilliscopeConnected.jpg" alt="Oscilloscope Connection Image">
+                    <p>Oscilloscope Connected</p>
+                    <a href="#" class="button" data-image-id="oscilloscopeConnected">View Details</a>
+                </div>
+                <div class="photo-card">
+                    <img src="images/Four_LEDS_ON.jpg" alt="Four LEDs Highlighted Timing">
+                    <p>Four LEDs Highlighted</p>
+                    <a href="#" class="button" data-image-id="fourLedsHighlighted">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-Up Section -->
+    <div id="details-popup" class="details-popup hidden">
+        <div class="details-content">
+            <span class="close-button" onclick="closeDetails()">&times;</span>
+            <h2 id="details-title" class="details-title">Title Here</h2>
+            <img id="details-image" class="details-image" src="" alt="Detail Image">
+            <p id="details-description" class="details-description">Description goes here.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
